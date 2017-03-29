@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #004461;
+	font-family: "Inconsolata", monospace;
+	color: #8bac0f;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+}
+.transparent{
+	opacity: 0.5;
+}
+.box{
+	background-color:rgba(34,34,34,0.50);
+	padding: 2%;
+	text-align: center;
+	color: rgba(0,176,192,1.00);
+	border-radius: 5px;
+}
