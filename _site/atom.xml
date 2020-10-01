@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>TGM Guide</title>
- <link href="http://localhost:4000/atom.xml" rel="self"/>
- <link href="http://localhost:4000/"/>
- <updated>2020-10-01T09:38:07+02:00</updated>
- <id>http://localhost:4000</id>
+ <link href="https://tgmguide.github.io/atom.xml" rel="self"/>
+ <link href="https://tgmguide.github.io/"/>
+ <updated>2020-10-01T09:46:21+02:00</updated>
+ <id>https://tgmguide.github.io</id>
  <author>
    <name>sinefuse</name>
    <email></email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Setting up an emulator to play TGM and TAP</title>
-   <link href="http://localhost:4000/2020/05/03/setting-up-an-emulator/"/>
+   <link href="https://tgmguide.github.io/2020/05/03/setting-up-an-emulator/"/>
    <updated>2020-05-03T00:00:00+02:00</updated>
-   <id>http://localhost:4000/2020/05/03/setting-up-an-emulator</id>
+   <id>https://tgmguide.github.io/2020/05/03/setting-up-an-emulator</id>
    <content type="html">&lt;p&gt;Welcome! This guide will teach you how to set up an emulator to play TGM and TAP.
 For a TL;DR, it’s recommend for you to check out the Introductory guide, available over the sidebar.&lt;/p&gt;
 
@@ -99,9 +99,9 @@ All P2 buttons - Unbinded
  
  <entry>
    <title>Setting up Texmaster2009</title>
-   <link href="http://localhost:4000/2020/05/02/setting-up-texmaster/"/>
+   <link href="https://tgmguide.github.io/2020/05/02/setting-up-texmaster/"/>
    <updated>2020-05-02T00:00:00+02:00</updated>
-   <id>http://localhost:4000/2020/05/02/setting-up-texmaster</id>
+   <id>https://tgmguide.github.io/2020/05/02/setting-up-texmaster</id>
    <content type="html">&lt;p&gt;This guide will tell you how to get Texmaster2009 running.
 Normally, we’d tell you to check out the introductory guide, but unfortunately, we haven’t gotten around to updating the TL;DR for it juuust yet.&lt;/p&gt;
 
@@ -214,9 +214,9 @@ F12 - Stop playing current BGM
  
  <entry>
    <title>Content soon(tm)</title>
-   <link href="http://localhost:4000/2020/04/03/WIP/"/>
+   <link href="https://tgmguide.github.io/2020/04/03/WIP/"/>
    <updated>2020-04-03T00:00:00+02:00</updated>
-   <id>http://localhost:4000/2020/04/03/WIP</id>
+   <id>https://tgmguide.github.io/2020/04/03/WIP</id>
    <content type="html">&lt;p&gt;Stay tuned, I’m working on things here.&lt;/p&gt;
 </content>
  </entry>
