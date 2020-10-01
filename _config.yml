@@ -2,7 +2,7 @@
 title:               TGM Guide
 tagline:             'The one-stop shop to get TGM running'
 description:         'A resource dedicated to helping new players to get started with playing TGM.'
-url:                 http://tgmguide.github.io
+url:                 https://tgmguide.github.io
 baseurl:             ''
 paginate:            999
 permalink:           pretty

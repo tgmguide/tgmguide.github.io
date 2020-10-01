@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>TGM Guide</title>
- <link href="http://tgmguide.github.io/atom.xml" rel="self"/>
- <link href="http://tgmguide.github.io/"/>
- <updated>2020-10-01T08:03:52+02:00</updated>
- <id>http://tgmguide.github.io</id>
+ <link href="https://tgmguide.github.io/atom.xml" rel="self"/>
+ <link href="https://tgmguide.github.io/"/>
+ <updated>2020-10-01T08:29:53+02:00</updated>
+ <id>https://tgmguide.github.io</id>
  <author>
    <name>sinefuse</name>
    <email></email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Setting up an emulator to play TGM and TAP</title>
-   <link href="http://tgmguide.github.io/2020/05/03/setting-up-an-emulator/"/>
+   <link href="https://tgmguide.github.io/2020/05/03/setting-up-an-emulator/"/>
    <updated>2020-05-03T00:00:00+02:00</updated>
-   <id>http://tgmguide.github.io/2020/05/03/setting-up-an-emulator</id>
+   <id>https://tgmguide.github.io/2020/05/03/setting-up-an-emulator</id>
    <content type="html">&lt;p&gt;Welcome! This guide will teach you how to set up an emulator to play TGM and TAP.
 For a TL;DR, it’s recommend for you to check out the Introductory guide, available over the sidebar.&lt;/p&gt;
 
@@ -99,9 +99,9 @@ All P2 buttons - Unbinded
  
  <entry>
    <title>Setting up Texmaster2009</title>
-   <link href="http://tgmguide.github.io/2020/05/02/setting-up-texmaster/"/>
+   <link href="https://tgmguide.github.io/2020/05/02/setting-up-texmaster/"/>
    <updated>2020-05-02T00:00:00+02:00</updated>
-   <id>http://tgmguide.github.io/2020/05/02/setting-up-texmaster</id>
+   <id>https://tgmguide.github.io/2020/05/02/setting-up-texmaster</id>
    <content type="html">&lt;p&gt;This guide will tell you how to get Texmaster2009 running.
 Normally, we’d tell you to check out the introductory guide, but unfortunately, we haven’t gotten around to updating the TL;DR for it juuust yet.&lt;/p&gt;
 
@@ -142,7 +142,40 @@ P1 Button 4    - Spacebar
  Take note that if you want to change the resolution, you should always work with whole numbers, multiplying the base resolution of &lt;b&gt;320x240&lt;/b&gt;! Using any other resolution will make your game look very weird. For example, sinefuse, the guide maintainer, uses 1280x960 (which is 4 times the base resolution), so they've set the width to 1280 and the height to 960.
 &lt;/p&gt;
 
-&lt;p&gt;The part that’s more important to us is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[KEYBOARD]&lt;/code&gt; settings, which you can find when scrolling down a bit. This only applies if you do not want to use the base key layout.&lt;/p&gt;
+&lt;p&gt;The part that’s more important to us is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[KEYBOARD]&lt;/code&gt; settings, which you can find when scrolling down a bit. This only applies if you do not want to use the base key layout. Go ahead and change the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;player1&lt;/code&gt; variable into a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;5&lt;/code&gt;. This will allow us to set the correct keys by reading from the other variables labled &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;key_type5&lt;/code&gt; right below that.&lt;/p&gt;
+
+&lt;p&gt;Now, unfortunately, unlike the example in the .ini file tells you to do, you can’t just put the actual keys you want to use in there and have it work. What you need to do is enter specific numbers which correspond to a certain key. As for which number you have to type in for the individual keys, you will have to go into your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;html&lt;/code&gt; folder which you can find when you have the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;root&lt;/code&gt; folder open. From there, open &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;key.html&lt;/code&gt;, and there you will have a handy list of which numbers correspond to which keys. Use the search function by pressing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CTRL+F&lt;/code&gt;, type in a key, and you should be able to find the corresponding number quite quickly. Now it’s just a matter of putting those numbers into the specific variables. Here is how the guide maintainer has his set up, for example:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;key_type5_up = 119
+key_type5_down = 115
+key_type5_left = 97
+key_type5_right = 100
+key_type5_a = 106
+key_type5_b = 107
+key_type5_c = 108
+key_type5_d = 32
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;This will result in a layout that uses A and D to go left/right, W for a sonic drop, S for a hard drop, JKL for rotations and the space bar for hold. Basically, it shifts the default layout up by one key row.&lt;/p&gt;
+
+&lt;p&gt;Either way, once this is all done, you can save your .ini file, as we are pretty much done here. Now is the time where we head into the actual game itself to do things!&lt;/p&gt;
+
+&lt;p&gt;When you’re first opening the game, you’re greeted with a nice splash screen and a logo. Press your first rotation key (M in the default key layout) to go into the profile selection menu, and create a new profile. Scroll through the letters with your navigation keys and set your name for the profile. After that, select your profile.&lt;/p&gt;
+
+&lt;p&gt;Now you’re greeted with whether you want to play in Classic or World mode. Classic is how the TGM games have usually worked, with a rotation system normally known as Arika Rotation System, or ARS for short, where as World mode is used by current-gen Tetris games such as Puyo Puyo Tetris or Tetris Effect, known as Super Rotation System or SRS. However, the implementation for World mode isn’t the best… a lot of things don’t work. We’d highly recommend playing in Classic mode anyways, as it’s more true to the TGM feel.&lt;/p&gt;
+
+&lt;p&gt;From here, now you can select any of the modes. Here’s what each mode corresponds to from the real games:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;NOVICE     = Normal mode from TAP
+NORMAL     = Master mode from TGM1
+ADVANCE    = Master mode from TAP
+SPECIAL    = TGM+ mode from TAP
+SUDDEN     = T.A. Death mode from TAP
+DOUBLES    = Doubles mode from TAP
+SPECIAL Ti = Master mode from Ti
+SUDDEN Ti  = Shirase mode from Ti
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And with that, you’re pretty much set to go! The F1 to F12 keys also have specific functions, feel free to experiment with those. I will list what they do in the future, as they’re not extremely important, unless you’re using a custom theme. The next section will show you how to install just that, by the way. It’s not mandatory by any means however, you’d be able to play the game normally like this. Enjoy playing, or feel free to install the theme!&lt;/p&gt;
+
+&lt;h2 id=&quot;todo-seting-up-termino-velocity-a-custom-theme&quot;&gt;TODO: Seting up “Termino Velocity”, a custom theme&lt;/h2&gt;
 
 &lt;p class=&quot;message&quot;&gt;
  This guide is still a work in progress! Give it some time, it will be updated soon...
@@ -152,9 +185,9 @@ P1 Button 4    - Spacebar
  
  <entry>
    <title>Content soon(tm)</title>
-   <link href="http://tgmguide.github.io/2020/04/03/WIP/"/>
+   <link href="https://tgmguide.github.io/2020/04/03/WIP/"/>
    <updated>2020-04-03T00:00:00+02:00</updated>
-   <id>http://tgmguide.github.io/2020/04/03/WIP</id>
+   <id>https://tgmguide.github.io/2020/04/03/WIP</id>
    <content type="html">&lt;p&gt;Stay tuned, I’m working on things here.&lt;/p&gt;
 </content>
  </entry>
