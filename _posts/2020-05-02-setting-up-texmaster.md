@@ -66,12 +66,12 @@ Now you're greeted with whether you want to play in Classic or World mode. Class
 
 From here, now you can select any of the modes. Here's what each mode corresponds to from the real games:
 ```
-NOVICE     = Normal mode from TAP
-NORMAL     = Master mode from TGM1
-ADVANCE    = Master mode from TAP
-SPECIAL    = TGM+ mode from TAP
+NOVICE     = Normal mode from TGM2
+NORMAL     = TGM1
+ADVANCE    = TGM+ mode from TAP
+SPECIAL    = Master mode from TGM2
 SUDDEN     = T.A. Death mode from TAP
-DOUBLES    = Doubles mode from TAP
+DOUBLES    = Doubles mode from TGM2
 SPECIAL Ti = Master mode from Ti
 SUDDEN Ti  = Shirase mode from Ti
 ```
