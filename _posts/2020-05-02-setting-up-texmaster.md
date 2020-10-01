@@ -7,6 +7,8 @@ title: Setting up Texmaster2009
 This guide will tell you how to get Texmaster2009 running.
 Normally, we'd tell you to check out the introductory guide, but unfortunately, we haven't gotten around to updating the TL;DR for it juuust yet.
 
+Also, this guide assumes that you're using Windows as your operating system. Texmaster also works for Linux, but if you use Linux, you probably know what you're doing. Installing mostly works the same way though, so you can still take a good chunk of info from this guide and apply it to your Linux install.
+
 Here's the steps we're taking on:
 * Downloading Texmaster2009-5
 * Seting up Texmaster properly
@@ -102,7 +104,9 @@ So, if you want to install Termino Velocity, which looks like this:
 
 ![Preview of Termino Velocity]({{ site.baseurl }}/public/img/texysetup/terminopreview.png)
 
-Then you're in the right place. It's quite easy, too: Download [this archive.]({{ site.baseurl }}/public/files/Termino Velocity.7z) Open it and you will find a `data` folder. Replace the current `data` folder inside your `root` folder of your Texmaster install with the one inside the archive. If you did it correctly, your game should now look like the preview further up. All you need to do now is press F8 to properly align the playfield and you're done!
+Then you're in the right place. It's quite easy, too: Download [this archive.]({{ site.baseurl }}/public/files/Termino Velocity.7z) Open it and you will find a `data` folder. Replace the current `data` folder inside your `root` folder of your Texmaster install with the one inside the archive. 
+
+Now, you need to go into the `Texmaster2009.ini` again, and search for a variable named `bg_brightness`. Replace the 6 with a 0. Save the file and fire up the game - if you did it correctly, your game should now look like the preview further up. All you need to do now is press F8 to properly align the playfield and you're done!
 
 <p class="message">
  Take note that you will have to press F8 every time you restart the game to properly align the playfield. Texmaster does not save that setting when you close the game.
