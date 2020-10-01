@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>TGM Guide</title>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2020-10-01T07:18:45+02:00</updated>
+ <id>http://localhost:4000</id>
+ <author>
+   <name>sinefuse</name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>Setting up an emulator to play TGM and TAP</title>
+   <link href="http://localhost:4000/2020/05/03/setting-up-an-emulator/"/>
+   <updated>2020-05-03T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2020/05/03/setting-up-an-emulator</id>
+   <content type="html">&lt;p&gt;Welcome! This guide will teach you how to set up an emulator to play TGM and TAP.
+For a TL;DR, it’s recommend for you to check out the Introductory guide, available over the sidebar.&lt;/p&gt;
+
+&lt;p&gt;Here’s what we will do:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Download Shmupmametgm, the emulator of choice for easy setup&lt;/li&gt;
+  &lt;li&gt;Install and set up Shmupmametgm properly&lt;/li&gt;
+  &lt;li&gt;Configure inputs&lt;/li&gt;
+  &lt;li&gt;Enable Free Play so we don’t have to feed our game “coins”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;With that out of the way, let us get started.&lt;/p&gt;
+
+&lt;p&gt;First off, you will have to download Shmupmametgm, the download link for that is &lt;a href=&quot;https://github.com/MaryHal/shmupmametgm/releases/download/v2.1/shmupmametgm_windows_2.1.zip&quot;&gt;right here.&lt;/a&gt; Once you have it downloaded, head over to the folder where you downloaded it to. We will now unzip the archive, and for convenience’s sake, we will unzip it to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C:\MAMETGM\&lt;/code&gt; (You can unzip this wherever you like, of course. We will just use this directory for simplicity’s sake). To do this, right click the archive named &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;shmupmametgm_windows_2.1.zip&lt;/code&gt; and click on “Extract all” as shown in the image.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/emusetup/ExtractAll.png&quot; alt=&quot;Extract All&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;From here, paste in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C:\MAMETGM\&lt;/code&gt; into the textbox you see in the window that came up, check “Show extracted files when complete” and click on “Extract”. After this, the folder with the emulator itself should be there, almost ready to go. One thing you will have to do is create a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;roms&lt;/code&gt; folder in the directory that just opened. In here, you put all of your legally obtained ROM images, which should still be inside their .zip files. You zip them after all to make sure that MAME can read them. Your folder should look a bit like this now:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/emusetup/FolderOverview.png&quot; alt=&quot;Folder Overview&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We’re almost done at this point. There’s additional steps you can take to make the games look better! What you want to do is hold your SHIFT key, right click in an empty space in your explorer window, and go on “Open PowerShell window here”. Paste the following command:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.\mametgm64.exe -cc&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;What this does is create a file called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mame.ini&lt;/code&gt;. This file has plethora of options you can change to make your game look as crispy as possible, as without the changes we are about to do, it’ll look like a big ‘ol blurry mess. We don’t like blurry messes, so let’s go ahead and open &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mame.ini&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;What you need to do now, once notepad has opened, is hold your CONTROL key and press F (for once, not to pay respects). A “search” dialog will open up. You want to type in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;filter&lt;/code&gt;, and it should look like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/emusetup/NotepadSearch.png&quot; alt=&quot;Notepad Search&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You should find a setting that says &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;filter 1&lt;/code&gt;. We change the 1 to a 0, which disables the blurring of the individual pixels in-game (menus will still look blurry), keeping them sharp and crispy - not to mention, it also gets closer to looking like the real thing.&lt;/p&gt;
+
+&lt;p&gt;If you want to play windowed, you need to change 2 more settings inside the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mame.ini&lt;/code&gt; file, which are &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;window&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;resolution&lt;/code&gt;. You search for them like you searched for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;filter&lt;/code&gt; earlier (press CONTROL + F), you might have to change the search direction however to make sure Notepad can find what we are looking for. You want to change &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;window&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;resolution&lt;/code&gt; to a multiple of 320x240, as that is the resolution the games run. For your convenience, here is a list of perfectly scaled resolutions:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;320x240&lt;/li&gt;
+  &lt;li&gt;640x480&lt;/li&gt;
+  &lt;li&gt;960x720 - Recommended for monitors with 1366x768 as resolution, mainly older laptops.&lt;/li&gt;
+  &lt;li&gt;1280x960 - Recommended for 1080p monitors, but you can try a lower resolution first.&lt;/li&gt;
+  &lt;li&gt;1600x1200 - Works for 1440p monitors, but you might be more comfortable with a lower resolution.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;message&quot;&gt;
+ While you can play in fullscreen of course, take note that on a monitor at 1366x768 resolution, fullscreen will look weird. 720p, 1080p, 1440p and above are generally fine.
+&lt;/p&gt;
+
+&lt;p&gt;We’re finally ready to fire up the emulator! Launch mametgm64.exe and you’ll be greeted with a selection of games. You can choose with the ARROW KEYS and the ENTER key. There’s only 2 games that you should launch from here, which are “TGM” and “TGM2P”, the latter of which is also known as “TAP”.&lt;/p&gt;
+
+&lt;p&gt;Once you start a game, a window will pop up - just type “OK” on your keyboard and the game will boot. From here, you need to press your TAB key to open up a configuration menu. From here, using the ARROW KEYS and ENTER, you can enter the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Input (General)&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Input (this Game)&lt;/code&gt; submenus and change your inputs how you’d like them, by going to whatever button you want to change, pressing ENTER once and then the key you’d like to use for that button. Once you’re done with setting them up in a specific way, you can press ESCAPE to exit out of the submenu and go into the other, or close the menu altogether. Do make sure to unbind (or re-bind) the Player 2 buttons to avoid input conflicts. To unbind a button, press enter to have it wait for what key you want to assign to the button, and press ESCAPE. Also, in case you are interested, here’s how the guide’s main maintainer, sinefuse, has their inputs set up:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1 Player Start - Kbd 1
+P1 Up          - W
+P1 Down        - S
+P1 Left        - A
+P1 Right       - D
+P1 Button 1    - J
+P1 Button 2    - K
+P1 Button 3    - L
+All P2 buttons - Unbinded
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Whether you want to have your inputs that way is your own decision, of course, but the layout sinefuse uses is somewhat like an arcade setup, with movement inputs on the left and rotation inputs on the right.&lt;/p&gt;
+
+&lt;p&gt;Now, this one is kind of important to avoid tedium: you will also see a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Service Menu&lt;/code&gt; key, which should be mapped to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;F2&lt;/code&gt;. &lt;strong&gt;Keep it that way&lt;/strong&gt;. It’s an important key, and once you’ve exited out of the menu we opened to change our controls, that’s precisely the key we will press to open up the &lt;strong&gt;Test Menu&lt;/strong&gt;. We want to enable Free Play in the games so we don’t have to always “throw in coins” into the emulator to play a round.&lt;/p&gt;
+
+&lt;p&gt;In TGM, you want to go down to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;7. CONFIGURATION&lt;/code&gt;, enter it, enter the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1. SYSTEM&lt;/code&gt; setting and then change the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1. COIN&lt;/code&gt; setting to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FREE PLAY&lt;/code&gt;. It should look like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/emusetup/FreePlayTGM.png&quot; alt=&quot;Free Play on TGM&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you did that, you can navigate to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;5. EXIT&lt;/code&gt; and then &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4. SAVE &amp;amp; EXIT&lt;/code&gt;. It will save the settings, and then you can navigate to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;9. EXIT&lt;/code&gt; and start playing the game by pressing the 1 Player Start key a few times!&lt;/p&gt;
+
+&lt;p&gt;For TAP, you want to go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Game Setting&lt;/code&gt; enter that, then down to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Coin Mode&lt;/code&gt; and press left once to switch to Free Play. It should look like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/emusetup/FreePlayTAP.png&quot; alt=&quot;Free Play on TAP&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Navigate to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Exit&lt;/code&gt; and then to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Exit (Reset)&lt;/code&gt;. Now you can start playing by just pressing your 1 Player Start key a bunch!&lt;/p&gt;
+
+&lt;p&gt;And with that, your emulator is properly set up and ready to go. Enjoy playing TGM!&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Introducing Lanyon</title>
+   <link href="http://localhost:4000/2020/04/03/introducing-lanyon/"/>
+   <updated>2020-04-03T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2020/04/03/introducing-lanyon</id>
+   <content type="html">&lt;p&gt;Lanyon is an unassuming &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; theme that places content first by tucking away navigation in a hidden drawer. It’s based on &lt;a href=&quot;http://getpoole.com&quot;&gt;Poole&lt;/a&gt;, the Jekyll butler.&lt;/p&gt;
+
+&lt;h3 id=&quot;built-on-poole&quot;&gt;Built on Poole&lt;/h3&gt;
+
+&lt;p&gt;Poole is the Jekyll Butler, serving as an upstanding and effective foundation for Jekyll themes by &lt;a href=&quot;https://twitter.com/mdo&quot;&gt;@mdo&lt;/a&gt;. Poole, and every theme built on it (like Lanyon here) includes the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Complete Jekyll setup included (layouts, config, &lt;a href=&quot;/404&quot;&gt;404&lt;/a&gt;, &lt;a href=&quot;/atom.xml&quot;&gt;RSS feed&lt;/a&gt;, posts, and &lt;a href=&quot;/about&quot;&gt;example page&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Mobile friendly design and development&lt;/li&gt;
+  &lt;li&gt;Easily scalable text and component sizing with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rem&lt;/code&gt; units in the CSS&lt;/li&gt;
+  &lt;li&gt;Support for a wide gamut of HTML elements&lt;/li&gt;
+  &lt;li&gt;Related posts (time-based, because Jekyll) below each post&lt;/li&gt;
+  &lt;li&gt;Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;lanyon-features&quot;&gt;Lanyon features&lt;/h3&gt;
+
+&lt;p&gt;In addition to the features of Poole, Lanyon adds the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Toggleable sliding sidebar (built with only CSS) via &lt;strong&gt;☰&lt;/strong&gt; link in top corner&lt;/li&gt;
+  &lt;li&gt;Sidebar includes support for textual modules and a dynamically generated navigation with active link support&lt;/li&gt;
+  &lt;li&gt;Two orientations for content and sidebar, default (left sidebar) and &lt;a href=&quot;https://github.com/poole/lanyon#reverse-layout&quot;&gt;reverse&lt;/a&gt; (right sidebar), available via &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;body&amp;gt;&lt;/code&gt; classes&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/poole/lanyon#themes&quot;&gt;Eight optional color schemes&lt;/a&gt;, available via &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;body&amp;gt;&lt;/code&gt; classes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/poole/lanyon#readme&quot;&gt;Head to the readme&lt;/a&gt; to learn more.&lt;/p&gt;
+
+&lt;h3 id=&quot;browser-support&quot;&gt;Browser support&lt;/h3&gt;
+
+&lt;p&gt;Lanyon is by preference a forward-thinking project. In addition to the latest versions of Chrome, Safari (mobile and desktop), and Firefox, it is only compatible with Internet Explorer 9 and above.&lt;/p&gt;
+
+&lt;h3 id=&quot;download&quot;&gt;Download&lt;/h3&gt;
+
+&lt;p&gt;Lanyon is developed on and hosted with GitHub. Head to the &lt;a href=&quot;https://github.com/poole/lanyon&quot;&gt;GitHub repository&lt;/a&gt; for downloads, bug reports, and features requests.&lt;/p&gt;
+
+&lt;p&gt;Thanks!&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Content soon(tm)</title>
+   <link href="http://localhost:4000/2020/04/03/introducing-lanyon-Copy/"/>
+   <updated>2020-04-03T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2020/04/03/introducing-lanyon - Copy</id>
+   <content type="html">&lt;p&gt;Stay tuned, I’m working on things here.&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>

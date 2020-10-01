@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<script src='/public/js/checkTheme.js'></script>
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Setting up an emulator to play TGM and TAP &middot; TGM Guide
+    
+  </title>
+
+  
+  <link rel="canonical" href="http://localhost:4000/2020/05/03/setting-up-an-emulator/">
+  
+
+  <link rel="stylesheet" href="http://localhost:4000/public/css/poole.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/syntax.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="http://localhost:4000/public/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://localhost:4000/atom.xml">
+
+  
+</head>
+
+
+  <body class="theme-base-0f">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>A resource dedicated to helping new players to get started with playing TGM.</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="http://localhost:4000/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="http://localhost:4000/tldr/">Introductory guide</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="http://localhost:4000/why/">About the guide</a>
+        
+      
+    
+
+    <span class="sidebar-nav-item">Currently v2.0.0</span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      Maintained by sinefuse. Based on the Lanyon theme for Jekyll.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">TGM Guide</a>
+            <small>The one-stop shop to get TGM running</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">Setting up an emulator to play TGM and TAP</h1>
+  <p>Welcome! This guide will teach you how to set up an emulator to play TGM and TAP.
+For a TL;DR, it’s recommend for you to check out the Introductory guide, available over the sidebar.</p>
+
+<p>Here’s what we will do:</p>
+<ul>
+  <li>Download Shmupmametgm, the emulator of choice for easy setup</li>
+  <li>Install and set up Shmupmametgm properly</li>
+  <li>Configure inputs</li>
+  <li>Enable Free Play so we don’t have to feed our game “coins”</li>
+</ul>
+
+<p>With that out of the way, let us get started.</p>
+
+<p>First off, you will have to download Shmupmametgm, the download link for that is <a href="https://github.com/MaryHal/shmupmametgm/releases/download/v2.1/shmupmametgm_windows_2.1.zip">right here.</a> Once you have it downloaded, head over to the folder where you downloaded it to. We will now unzip the archive, and for convenience’s sake, we will unzip it to <code class="language-plaintext highlighter-rouge">C:\MAMETGM\</code> (You can unzip this wherever you like, of course. We will just use this directory for simplicity’s sake). To do this, right click the archive named <code class="language-plaintext highlighter-rouge">shmupmametgm_windows_2.1.zip</code> and click on “Extract all” as shown in the image.</p>
+
+<p><img src="/public/img/emusetup/ExtractAll.png" alt="Extract All" /></p>
+
+<p>From here, paste in <code class="language-plaintext highlighter-rouge">C:\MAMETGM\</code> into the textbox you see in the window that came up, check “Show extracted files when complete” and click on “Extract”. After this, the folder with the emulator itself should be there, almost ready to go. One thing you will have to do is create a <code class="language-plaintext highlighter-rouge">roms</code> folder in the directory that just opened. In here, you put all of your legally obtained ROM images, which should still be inside their .zip files. You zip them after all to make sure that MAME can read them. Your folder should look a bit like this now:</p>
+
+<p><img src="/public/img/emusetup/FolderOverview.png" alt="Folder Overview" /></p>
+
+<p>We’re almost done at this point. There’s additional steps you can take to make the games look better! What you want to do is hold your SHIFT key, right click in an empty space in your explorer window, and go on “Open PowerShell window here”. Paste the following command:</p>
+
+<p><code class="language-plaintext highlighter-rouge">.\mametgm64.exe -cc</code></p>
+
+<p>What this does is create a file called <code class="language-plaintext highlighter-rouge">mame.ini</code>. This file has plethora of options you can change to make your game look as crispy as possible, as without the changes we are about to do, it’ll look like a big ‘ol blurry mess. We don’t like blurry messes, so let’s go ahead and open <code class="language-plaintext highlighter-rouge">mame.ini</code>.</p>
+
+<p>What you need to do now, once notepad has opened, is hold your CONTROL key and press F (for once, not to pay respects). A “search” dialog will open up. You want to type in <code class="language-plaintext highlighter-rouge">filter</code>, and it should look like this:</p>
+
+<p><img src="/public/img/emusetup/NotepadSearch.png" alt="Notepad Search" /></p>
+
+<p>You should find a setting that says <code class="language-plaintext highlighter-rouge">filter 1</code>. We change the 1 to a 0, which disables the blurring of the individual pixels in-game (menus will still look blurry), keeping them sharp and crispy - not to mention, it also gets closer to looking like the real thing.</p>
+
+<p>If you want to play windowed, you need to change 2 more settings inside the <code class="language-plaintext highlighter-rouge">mame.ini</code> file, which are <code class="language-plaintext highlighter-rouge">window</code> and <code class="language-plaintext highlighter-rouge">resolution</code>. You search for them like you searched for <code class="language-plaintext highlighter-rouge">filter</code> earlier (press CONTROL + F), you might have to change the search direction however to make sure Notepad can find what we are looking for. You want to change <code class="language-plaintext highlighter-rouge">window</code> to <code class="language-plaintext highlighter-rouge">1</code> and <code class="language-plaintext highlighter-rouge">resolution</code> to a multiple of 320x240, as that is the resolution the games run. For your convenience, here is a list of perfectly scaled resolutions:</p>
+<ul>
+  <li>320x240</li>
+  <li>640x480</li>
+  <li>960x720 - Recommended for monitors with 1366x768 as resolution, mainly older laptops.</li>
+  <li>1280x960 - Recommended for 1080p monitors, but you can try a lower resolution first.</li>
+  <li>1600x1200 - Works for 1440p monitors, but you might be more comfortable with a lower resolution.</li>
+</ul>
+
+<p class="message">
+ While you can play in fullscreen of course, take note that on a monitor at 1366x768 resolution, fullscreen will look weird. 720p, 1080p, 1440p and above are generally fine.
+</p>
+
+<p>We’re finally ready to fire up the emulator! Launch mametgm64.exe and you’ll be greeted with a selection of games. You can choose with the ARROW KEYS and the ENTER key. There’s only 2 games that you should launch from here, which are “TGM” and “TGM2P”, the latter of which is also known as “TAP”.</p>
+
+<p>Once you start a game, a window will pop up - just type “OK” on your keyboard and the game will boot. From here, you need to press your TAB key to open up a configuration menu. From here, using the ARROW KEYS and ENTER, you can enter the <code class="language-plaintext highlighter-rouge">Input (General)</code> and <code class="language-plaintext highlighter-rouge">Input (this Game)</code> submenus and change your inputs how you’d like them, by going to whatever button you want to change, pressing ENTER once and then the key you’d like to use for that button. Once you’re done with setting them up in a specific way, you can press ESCAPE to exit out of the submenu and go into the other, or close the menu altogether. Do make sure to unbind (or re-bind) the Player 2 buttons to avoid input conflicts. To unbind a button, press enter to have it wait for what key you want to assign to the button, and press ESCAPE. Also, in case you are interested, here’s how the guide’s main maintainer, sinefuse, has their inputs set up:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1 Player Start - Kbd 1
+P1 Up          - W
+P1 Down        - S
+P1 Left        - A
+P1 Right       - D
+P1 Button 1    - J
+P1 Button 2    - K
+P1 Button 3    - L
+All P2 buttons - Unbinded
+</code></pre></div></div>
+
+<p>Whether you want to have your inputs that way is your own decision, of course, but the layout sinefuse uses is somewhat like an arcade setup, with movement inputs on the left and rotation inputs on the right.</p>
+
+<p>Now, this one is kind of important to avoid tedium: you will also see a <code class="language-plaintext highlighter-rouge">Service Menu</code> key, which should be mapped to <code class="language-plaintext highlighter-rouge">F2</code>. <strong>Keep it that way</strong>. It’s an important key, and once you’ve exited out of the menu we opened to change our controls, that’s precisely the key we will press to open up the <strong>Test Menu</strong>. We want to enable Free Play in the games so we don’t have to always “throw in coins” into the emulator to play a round.</p>
+
+<p>In TGM, you want to go down to <code class="language-plaintext highlighter-rouge">7. CONFIGURATION</code>, enter it, enter the <code class="language-plaintext highlighter-rouge">1. SYSTEM</code> setting and then change the <code class="language-plaintext highlighter-rouge">1. COIN</code> setting to <code class="language-plaintext highlighter-rouge">FREE PLAY</code>. It should look like this:</p>
+
+<p><img src="/public/img/emusetup/FreePlayTGM.png" alt="Free Play on TGM" /></p>
+
+<p>Once you did that, you can navigate to <code class="language-plaintext highlighter-rouge">5. EXIT</code> and then <code class="language-plaintext highlighter-rouge">4. SAVE &amp; EXIT</code>. It will save the settings, and then you can navigate to <code class="language-plaintext highlighter-rouge">9. EXIT</code> and start playing the game by pressing the 1 Player Start key a few times!</p>
+
+<p>For TAP, you want to go to <code class="language-plaintext highlighter-rouge">Game Setting</code> enter that, then down to <code class="language-plaintext highlighter-rouge">Coin Mode</code> and press left once to switch to Free Play. It should look like this:</p>
+
+<p><img src="/public/img/emusetup/FreePlayTAP.png" alt="Free Play on TAP" /></p>
+
+<p>Navigate to <code class="language-plaintext highlighter-rouge">Exit</code> and then to <code class="language-plaintext highlighter-rouge">Exit (Reset)</code>. Now you can start playing by just pressing your 1 Player Start key a bunch!</p>
+
+<p>And with that, your emulator is properly set up and ready to go. Enjoy playing TGM!</p>
+
+</div>
+
+<!-- see all this related post stuff? yeah eat my shit
+
+<div class="related">
+  <h2>Related posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2020/04/03/introducing-lanyon/">
+            Introducing Lanyon
+            <small>03 Apr 2020</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2020/04/03/introducing-lanyon-Copy/">
+            Content soon(tm)
+            <small>03 Apr 2020</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+--> 
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+	<label class="theme-toggle" onclick="modeSwitcher()"></label>
+
+    <script src='/public/js/script.js'></script>
+	<script src='/public/js/themeSwitcher.js'></script>
+  </body>
+</html>
