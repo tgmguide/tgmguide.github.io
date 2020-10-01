@@ -1,71 +1,22 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>TGM Guide</title>
-<link href="tgmguide.css" rel="stylesheet" type="text/css">
-</head>
+---
+layout: default
+title: Home
+---
 
-<body>
-<div class="container">
-<div class="box"> <img src="t.png" width="144px" height="96px" alt="T-Piece"/> 
+<h4>Welcome to the TGM Guide! For a shortened guide that covers everything, <a href="/tgmguide/tldr/">please visit this page</a>. For detailed guides, please scroll down and have a look!</h4>
 <br>
-<span style="font-size: 4em;">TETRIS TGM SETUP GUIDE</span>
-<br>
-<span style="font-size: 2em;">A handy guide on how to set up TGM and Texmaster</span>
-<br><br>
-[Non-TL;DR Guides to follow!]<br>
-<div class="box2">
-	<b style="font-size: 2em;">TL;DR BELOW</b>
-	<br>
-	<b style="font-size: 1.5em;">TGM1/TAP</b><br>
-	Install shmupmame first: 
-    <a href="https://shmupmame.wordpress.com/download/">[download]</a><br>
-	Then paste mametgm into the shmupmame folder: 
-    <a href="https://github.com/sanford1/shmupmametgm/releases">[download]</a><br>
-	<br>
-	Now you'll need roms. This guide cannot hook you up with those due to legal reasons but the filenames you're
-    looking for are as follows:<br>
-	TGM1: "tgmj.zip" and "cpzn2.zip". If you decide to not use shmupmametgm for whatever reason and want to run
-    the regular newest MAME version for whatever reason, you'll also need "qsound.zip".<br>
-	TGM2/TAP: "tgm2.zip" and "tgm2p.zip". Keep in mind you MUST start "tgm2p.zip" if you want to play the TAP
-    exclusive modes such as T.A. Death.<br>
-    By the way, I heard that there may be a website which declares itself as a paradise which has these. ;)<br>
-	To change key layout, press Tab and navigate with WASD and H to enter menus. Then set the keys to whatever
-    you like.<br>
-	<br>
-	<b style="font-size: 1.5em;">TGM3 Terror Instinct</b><br>
-    First you'll need to go on a small scavenger hunt for the actual game files. Doing a google search for it
-    should usually do the job.<br>
-	Now, you absolutely MUST download the altinput package unless you want stupid amounts of input lag: 
-    <a href="http://tgmguide.github.io/altinput.zip">[download]</a><br>
-	To configure your keyboard layout, you need to open the cfg that comes with altinput and check out the
-    link to a Microsoft page that's in there. Then do some ctrl-F searching for the keys you need and paste the
-    according codes into the cfg file.<br>
-	When starting the game, <span style="color:#97FFF0;">start it using tgm3_launcher.exe!</span> Don't use the normal launcher!<br>
-	If you've done everything correctly then you too can now enjoy all of these games!<br><br>
-    
-	<b style="font-size: 1.5em;">Texmaster</b><br>
-	But <b>WAIT!</b> I don't like piracy, it's unethical! HOW DO I CIRCUMVENT THIS?<br>
-	Well, lucky you! We have Texmaster! A free clone with which you can play all TGM modes (aside from Sakura
-    from TGM3)!<br>
-    <span style="color:#97FFF0;">Note: for all downloads in this section, you need 7-Zip! Go google it up or something.</span><br>
-	Here is the download link to the latest Texmaster version: 
-    <a href="http://mindflyer.net/tetris/texmaster/Texmaster2009-5.7z">[download]</a><br>
-	But man, regular Texmaster looks like shit. Let's fix this, shall we?<br>
-	Grab this "modpack" called Termino Velocity! It absolutely kicks vanilla Texmaster's ass with an
-    entirely new look and feel to it. Download's here: <a href="http://csr.s-ul.eu/0Qap4I3F.7z">[download]</a><br>
-	In order to change your key layout, open the .ini and then the "keys.html" file in the "html" folder to see
-    which numbers you need to use for the individual keys. Don't forget to set Player 1's key layout to your
-    custom one.
-    <br>
-	<br>
-	And there you go. A quick TL;DR (which is still fairly long) to just get the games up and running.<br>
-	Now go out there and stack to your hearts content!
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url | absolute_url }}">
+        {{ post.title }}
+      </a>
+    </h1>
+
+
+
+
+  </div>
+  {% endfor %}
 </div>
-<br>
-PS: If any of the links go down, please PM "Sinewave" on <a href="http://tetrisconcept.net">Tetrisconcept.net</a>!
-</div>
-</div>
-</body>
-</html>
