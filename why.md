@@ -7,4 +7,4 @@ This guide exists so new TGM players can jump into the game quickly, without muc
 
 In case you find any problems with the content of this website, please contact me on my Twitter account, which is [@sinefuse](https://twitter.com/sinefuse) and I will respond as soon as I can.
 
-This guide is based on [Lanyon](https://lanyon.getpoole.com/) (with slight modifications to the CSS and the template pages), which in turn is a theme for [Jekyll](https://jekyllrb.com). The source code for this guide is available [in this GitHub repository.](https://github.com/sinewaveslicer/tgmguide-jekyll)
+This guide is based on [Lanyon](https://lanyon.getpoole.com/) (with slight modifications to the CSS and the template pages), which in turn is a theme for [Jekyll](https://jekyllrb.com). The source code for this guide is available [in this GitHub repository.](https://github.com/tgmguide/tgmguide.github.io)

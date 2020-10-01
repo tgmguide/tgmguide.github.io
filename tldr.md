@@ -30,7 +30,7 @@ Unfortunately, playing TGM in a truly legitimate way is extremely difficult thes
 <div id="section2"></div>
 ## What is the difference between Emulator and Clones?
 
-The difference is that in an Emulator, you play the actual games and your high scores can be submitted to [theabsolute.plus](theabsolute.plus), which is a leaderboard site for these games. Naturally, using emulators to play **pirated** copies is illegal of course, which is why **this guide will not provide direct links to any ROM images you may need.** However, if you provide your own, legally obtained ROM images to use with the emulator, it's perfectly legal. Therefore, *this guide assumes you're using your own, legally obtained ROM images.*
+The difference is that in an Emulator, you play the actual games and your high scores can be submitted to [theabsolute.plus](https://theabsolute.plus), which is a leaderboard site for these games. Naturally, using emulators to play **pirated** copies is illegal of course, which is why **this guide will not provide direct links to any ROM images you may need.** However, if you provide your own, legally obtained ROM images to use with the emulator, it's perfectly legal. Therefore, *this guide assumes you're using your own, legally obtained ROM images.*
 
 Clones, on the other hand, usually have *gamemodes* which play like the actual games, but due to being slightly inaccurate (we're talking very slight amounts, by the way) and due to not being the actual games, scores from clones are not permitted on the leaderboards mentioned earlier. The thing about clones however is, since they're written from the ground up, they're legal to use. 
 
@@ -72,7 +72,6 @@ After this, you can play to your heart's content, enjoy! Also, for clarification
 
 <div id="section4b"></div>
 ### Setting up a clone
+[For a full guide for Texmaster, please click here.]({{ site.baseurl }}/2020/05/02/setting-up-texmaster/)
 
-<p class="message">
- This is all still a WIP. I still need to mess with these message things, shouldn't take too much tinkering though...
-</p>
+A proper TL;DR guide for Texmaster will follow soon.
