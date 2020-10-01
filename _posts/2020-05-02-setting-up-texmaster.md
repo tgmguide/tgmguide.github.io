@@ -58,6 +58,28 @@ key_type5_d = 32
 ```
 This will result in a layout that uses A and D to go left/right, W for a sonic drop, S for a hard drop, JKL for rotations and the space bar for hold. Basically, it shifts the default layout up by one key row.
 
+Either way, once this is all done, you can save your .ini file, as we are pretty much done here. Now is the time where we head into the actual game itself to do things!
+
+When you're first opening the game, you're greeted with a nice splash screen and a logo. Press your first rotation key (M in the default key layout) to go into the profile selection menu, and create a new profile. Scroll through the letters with your navigation keys and set your name for the profile. After that, select your profile. 
+
+Now you're greeted with whether you want to play in Classic or World mode. Classic is how the TGM games have usually worked, with a rotation system normally known as Arika Rotation System, or ARS for short, where as World mode is used by current-gen Tetris games such as Puyo Puyo Tetris or Tetris Effect, known as Super Rotation System or SRS. However, the implementation for World mode isn't the best... a lot of things don't work. We'd highly recommend playing in Classic mode anyways, as it's more true to the TGM feel.
+
+From here, now you can select any of the modes. Here's what each mode corresponds to from the real games:
+```
+NOVICE     = Normal mode from TAP
+NORMAL     = Master mode from TGM1
+ADVANCE    = Master mode from TAP
+SPECIAL    = TGM+ mode from TAP
+SUDDEN     = T.A. Death mode from TAP
+DOUBLES    = Doubles mode from TAP
+SPECIAL Ti = Master mode from Ti
+SUDDEN Ti  = Shirase mode from Ti
+```
+
+And with that, you're pretty much set to go! The F1 to F12 keys also have specific functions, feel free to experiment with those. I will list what they do in the future, as they're not extremely important, unless you're using a custom theme. The next section will show you how to install just that, by the way. It's not mandatory by any means however, you'd be able to play the game normally like this. Enjoy playing, or feel free to install the theme!
+
+## TODO: Seting up "Termino Velocity", a custom theme
+
 <p class="message">
  This guide is still a work in progress! Give it some time, it will be updated soon...
 </p>
