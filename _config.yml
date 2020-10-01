@@ -1,0 +1,20 @@
+# Setup
+title:               TGM Guide
+tagline:             'The one-stop shop to get TGM running'
+description:         'A resource dedicated to helping new players to get started with playing TGM.'
+url:                 http://sinewave.moe
+baseurl:             '/tgmguide'
+paginate:            999
+permalink:           pretty
+
+# About/contact
+author:
+  name:              sinefuse
+  url:               https://twitter.com/sinefuse
+
+# Gems
+plugins:
+  - jekyll-paginate
+
+# Custom vars
+version:             2.0.0
