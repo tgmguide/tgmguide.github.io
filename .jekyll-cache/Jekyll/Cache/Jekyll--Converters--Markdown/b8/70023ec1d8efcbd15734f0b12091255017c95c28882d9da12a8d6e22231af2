@@ -1,0 +1,46 @@
+I"�<p>This guide will tell you how to get Texmaster2009 running.
+Normally, we’d tell you to check out the introductory guide, but unfortunately, we haven’t gotten around to updating the TL;DR for it juuust yet.</p>
+
+<p>Here’s the steps we’re taking on:</p>
+<ul>
+  <li>Downloading Texmaster2009-5</li>
+  <li>Seting up Texmaster properly</li>
+  <li>OPTIONAL: Seting up “Termino Velocity”, a custom theme</li>
+</ul>
+
+<h2 id="downloading-texmaster2009-5">Downloading Texmaster2009-5</h2>
+
+<p>First thing you need is Texmaster itself, of course. The link for that can be <a href="http://mindflyer.net/tetris/texmaster/Texmaster2009-5.7z">Right about here.</a> You’ll need 7-Zip to unpack the archive. If you don’t have it yet, use your mighty Google powers and find any mirror to download it from. (TODO link 7-Zip website) Just unzip it anywhere and you will end up with a folder named <code class="language-plaintext highlighter-rouge">Texmaster2009</code>. Enter that folder - You should see something like this.</p>
+
+<p><img src="/public/img/texysetup/rootfolder.png" alt="Texmaster folder, fully extracted" /></p>
+
+<p>From here on out, this place will be referred to as the <code class="language-plaintext highlighter-rouge">root</code> folder in the guide.</p>
+
+<p>Technically, Texmaster is already ready to go, albeit with a bit of a cramped layout.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Assuming you have a QWERTY keyboard:
+P1 Up          - S
+P1 Down        - X
+P1 Left        - Z
+P1 Right       - C
+P1 Button 1    - N
+P1 Button 2    - M
+P1 Button 3    - ,
+P1 Button 4    - Spacebar
+</code></pre></div></div>
+
+<h2 id="setting-up-texmaster-properly">Setting up Texmaster properly</h2>
+
+<p>However, of course, we can remedy this, thanks to the wonderful <code class="language-plaintext highlighter-rouge">Texmaster2009.ini</code> file we can see in the <code class="language-plaintext highlighter-rouge">root</code> folder. Open it up in a text editor of your choice - if you don’t have one yet, we recommend you to give Notepad++ a try!</p>
+
+<p>Now, once in here, there’s a bunch of variables you can change. In the <code class="language-plaintext highlighter-rouge">[VIDEO]</code> settings, I recommend you to only change the resolution and whether you want to use fullscreen or not. The other options are a bit more advanced and don’t really matter anyways.</p>
+
+<p class="message">
+ Take note that if you want to change the resolution, you should always work with whole numbers, multiplying the base resolution of <b>320x240</b>! Using any other resolution will make your game look very weird. For example, sinefuse, the guide maintainer, uses 1280x960 (which is 4 times the base resolution), so they've set the width to 1280 and the height to 960.
+</p>
+
+<p>The part that’s more important to us is the <code class="language-plaintext highlighter-rouge">[KEYBOARD]</code> settings, which you can find when scrolling down a bit. This only applies if you do not want to use the base key layout.</p>
+
+<p class="message">
+ This guide is still a work in progress! Give it some time, it will be updated soon...
+</p>
+:ET
