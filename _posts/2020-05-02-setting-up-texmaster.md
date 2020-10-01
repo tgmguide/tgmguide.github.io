@@ -76,10 +76,36 @@ SPECIAL Ti = Master mode from Ti
 SUDDEN Ti  = Shirase mode from Ti
 ```
 
-And with that, you're pretty much set to go! The F1 to F12 keys also have specific functions, feel free to experiment with those. I will list what they do in the future, as they're not extremely important, unless you're using a custom theme. The next section will show you how to install just that, by the way. It's not mandatory by any means however, you'd be able to play the game normally like this. Enjoy playing, or feel free to install the theme!
+Also, the function keys (F1 - F12) All do different things. Here's what they each do:
+```
+F1  - Fast Forward
+F2  - Speeds up menus, for some reason...
+F3  - Check best section times
+F4  - No function
+F5  - Screenshot
+F6  - Replay viewer
+F7  - Sound test
+F8  - Change playfield view (Recommended for custom themes!)
+F9  - No function
+F10 - Show FPS, speed and CPU usage
+F11 - Instantly stop game and go back to title screen
+F12 - Stop playing current BGM
+```
 
-## TODO: Seting up "Termino Velocity", a custom theme
+And with that, you're pretty much set to go, unless you want to install a custom theme, in which case, read on:
+
+## Seting up "Termino Velocity", a custom theme
+
+Yep, this game has custom themes. This one, Termino Velocity, is praised by many players to be among the best Texmaster themes ever created. Unfortunately, Digital, the creator of the theme, has been inactive for a long time and the theme ended up being ported painstakingly to the newest Texmaster version by sinefuse.
+
+So, if you want to install Termino Velocity, which looks like this:
+
+![Preview of Termino Velocity]({{ site.baseurl }}/public/img/texysetup/terminopreview.png)
+
+Then you're in the right place. It's quite easy, too: Download [this archive.]({{ site.baseurl }}/public/files/Termino Velocity.7z) Open it and you will find a `data` folder. Replace the current `data` folder inside your `root` folder of your Texmaster install with the one inside the archive. If you did it correctly, your game should now look like the preview further up. All you need to do now is press F8 to properly align the playfield and you're done!
 
 <p class="message">
- This guide is still a work in progress! Give it some time, it will be updated soon...
+ Take note that you will have to press F8 every time you restart the game to properly align the playfield. Texmaster does not save that setting when you close the game.
 </p>
+
+Now go out there and play some Tetris! Feel free to share this guide if it helped you!

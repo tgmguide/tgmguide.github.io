@@ -4,7 +4,7 @@
  <title>TGM Guide</title>
  <link href="https://tgmguide.github.io/atom.xml" rel="self"/>
  <link href="https://tgmguide.github.io/"/>
- <updated>2020-10-01T08:29:53+02:00</updated>
+ <updated>2020-10-01T09:05:41+02:00</updated>
  <id>https://tgmguide.github.io</id>
  <author>
    <name>sinefuse</name>
@@ -163,23 +163,48 @@ key_type5_d = 32
 &lt;p&gt;Now you’re greeted with whether you want to play in Classic or World mode. Classic is how the TGM games have usually worked, with a rotation system normally known as Arika Rotation System, or ARS for short, where as World mode is used by current-gen Tetris games such as Puyo Puyo Tetris or Tetris Effect, known as Super Rotation System or SRS. However, the implementation for World mode isn’t the best… a lot of things don’t work. We’d highly recommend playing in Classic mode anyways, as it’s more true to the TGM feel.&lt;/p&gt;
 
 &lt;p&gt;From here, now you can select any of the modes. Here’s what each mode corresponds to from the real games:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;NOVICE     = Normal mode from TAP
-NORMAL     = Master mode from TGM1
-ADVANCE    = Master mode from TAP
-SPECIAL    = TGM+ mode from TAP
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;NOVICE     = Normal mode from TGM2
+NORMAL     = TGM1
+ADVANCE    = TGM+ mode from TAP
+SPECIAL    = Master mode from TGM2
 SUDDEN     = T.A. Death mode from TAP
-DOUBLES    = Doubles mode from TAP
+DOUBLES    = Doubles mode from TGM2
 SPECIAL Ti = Master mode from Ti
 SUDDEN Ti  = Shirase mode from Ti
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;And with that, you’re pretty much set to go! The F1 to F12 keys also have specific functions, feel free to experiment with those. I will list what they do in the future, as they’re not extremely important, unless you’re using a custom theme. The next section will show you how to install just that, by the way. It’s not mandatory by any means however, you’d be able to play the game normally like this. Enjoy playing, or feel free to install the theme!&lt;/p&gt;
+&lt;p&gt;Also, the function keys (F1 - F12) All do different things. Here’s what they each do:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;F1  - Fast Forward
+F2  - Speeds up menus, for some reason...
+F3  - Check best section times
+F4  - No function
+F5  - Screenshot
+F6  - Replay viewer
+F7  - Sound test
+F8  - Change playfield view (Recommended for custom themes!)
+F9  - No function
+F10 - Show FPS, speed and CPU usage
+F11 - Instantly stop game and go back to title screen
+F12 - Stop playing current BGM
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;todo-seting-up-termino-velocity-a-custom-theme&quot;&gt;TODO: Seting up “Termino Velocity”, a custom theme&lt;/h2&gt;
+&lt;p&gt;And with that, you’re pretty much set to go, unless you want to install a custom theme, in which case, read on:&lt;/p&gt;
+
+&lt;h2 id=&quot;seting-up-termino-velocity-a-custom-theme&quot;&gt;Seting up “Termino Velocity”, a custom theme&lt;/h2&gt;
+
+&lt;p&gt;Yep, this game has custom themes. This one, Termino Velocity, is praised by many players to be among the best Texmaster themes ever created. Unfortunately, Digital, the creator of the theme, has been inactive for a long time and the theme ended up being ported painstakingly to the newest Texmaster version by sinefuse.&lt;/p&gt;
+
+&lt;p&gt;So, if you want to install Termino Velocity, which looks like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/texysetup/terminopreview.png&quot; alt=&quot;Preview of Termino Velocity&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then you’re in the right place. It’s quite easy, too: Download &lt;a href=&quot;/public/files/Termino Velocity.7z&quot;&gt;this archive.&lt;/a&gt; Open it and you will find a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;data&lt;/code&gt; folder. Replace the current &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;data&lt;/code&gt; folder inside your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;root&lt;/code&gt; folder of your Texmaster install with the one inside the archive. If you did it correctly, your game should now look like the preview further up. All you need to do now is press F8 to properly align the playfield and you’re done!&lt;/p&gt;
 
 &lt;p class=&quot;message&quot;&gt;
- This guide is still a work in progress! Give it some time, it will be updated soon...
+ Take note that you will have to press F8 every time you restart the game to properly align the playfield. Texmaster does not save that setting when you close the game.
 &lt;/p&gt;
+
+&lt;p&gt;Now go out there and play some Tetris! Feel free to share this guide if it helped you!&lt;/p&gt;
 </content>
  </entry>
  
