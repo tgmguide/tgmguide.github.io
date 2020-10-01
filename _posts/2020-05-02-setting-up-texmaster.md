@@ -43,7 +43,20 @@ Now, once in here, there's a bunch of variables you can change. In the `[VIDEO]`
  Take note that if you want to change the resolution, you should always work with whole numbers, multiplying the base resolution of <b>320x240</b>! Using any other resolution will make your game look very weird. For example, sinefuse, the guide maintainer, uses 1280x960 (which is 4 times the base resolution), so they've set the width to 1280 and the height to 960.
 </p>
 
-The part that's more important to us is the `[KEYBOARD]` settings, which you can find when scrolling down a bit. This only applies if you do not want to use the base key layout.
+The part that's more important to us is the `[KEYBOARD]` settings, which you can find when scrolling down a bit. This only applies if you do not want to use the base key layout. Go ahead and change the `player1` variable into a `5`. This will allow us to set the correct keys by reading from the other variables labled `key_type5` right below that.
+
+Now, unfortunately, unlike the example in the .ini file tells you to do, you can't just put the actual keys you want to use in there and have it work. What you need to do is enter specific numbers which correspond to a certain key. As for which number you have to type in for the individual keys, you will have to go into your `html` folder which you can find when you have the `root` folder open. From there, open `key.html`, and there you will have a handy list of which numbers correspond to which keys. Use the search function by pressing `CTRL+F`, type in a key, and you should be able to find the corresponding number quite quickly. Now it's just a matter of putting those numbers into the specific variables. Here is how the guide maintainer has his set up, for example:
+```
+key_type5_up = 119
+key_type5_down = 115
+key_type5_left = 97
+key_type5_right = 100
+key_type5_a = 106
+key_type5_b = 107
+key_type5_c = 108
+key_type5_d = 32
+```
+This will result in a layout that uses A and D to go left/right, W for a sonic drop, S for a hard drop, JKL for rotations and the space bar for hold. Basically, it shifts the default layout up by one key row.
 
 <p class="message">
  This guide is still a work in progress! Give it some time, it will be updated soon...

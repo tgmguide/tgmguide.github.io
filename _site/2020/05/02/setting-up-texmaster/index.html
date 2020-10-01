@@ -15,18 +15,18 @@
   </title>
 
   
-  <link rel="canonical" href="http://tgmguide.github.io/2020/05/02/setting-up-texmaster/">
+  <link rel="canonical" href="https://tgmguide.github.io/2020/05/02/setting-up-texmaster/">
   
 
-  <link rel="stylesheet" href="http://tgmguide.github.io/public/css/poole.css">
-  <link rel="stylesheet" href="http://tgmguide.github.io/public/css/syntax.css">
-  <link rel="stylesheet" href="http://tgmguide.github.io/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://tgmguide.github.io/public/css/poole.css">
+  <link rel="stylesheet" href="https://tgmguide.github.io/public/css/syntax.css">
+  <link rel="stylesheet" href="https://tgmguide.github.io/public/css/lanyon.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
 
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://tgmguide.github.io/public/apple-touch-icon-precomposed.png">
-  <link rel="shortcut icon" href="http://tgmguide.github.io/public/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://tgmguide.github.io/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="https://tgmguide.github.io/public/favicon.ico">
 
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://tgmguide.github.io/atom.xml">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="https://tgmguide.github.io/atom.xml">
 
   
 </head>
@@ -45,7 +45,7 @@
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item" href="http://tgmguide.github.io/">Home</a>
+    <a class="sidebar-nav-item" href="https://tgmguide.github.io/">Home</a>
 
     
 
@@ -63,13 +63,13 @@
     
       
         
-          <a class="sidebar-nav-item" href="http://tgmguide.github.io/tldr/">Introductory guide</a>
+          <a class="sidebar-nav-item" href="https://tgmguide.github.io/tldr/">Introductory guide</a>
         
       
     
       
         
-          <a class="sidebar-nav-item" href="http://tgmguide.github.io/why/">About the guide</a>
+          <a class="sidebar-nav-item" href="https://tgmguide.github.io/why/">About the guide</a>
         
       
     
@@ -140,7 +140,19 @@ P1 Button 4    - Spacebar
  Take note that if you want to change the resolution, you should always work with whole numbers, multiplying the base resolution of <b>320x240</b>! Using any other resolution will make your game look very weird. For example, sinefuse, the guide maintainer, uses 1280x960 (which is 4 times the base resolution), so they've set the width to 1280 and the height to 960.
 </p>
 
-<p>The part that’s more important to us is the <code class="language-plaintext highlighter-rouge">[KEYBOARD]</code> settings, which you can find when scrolling down a bit. This only applies if you do not want to use the base key layout.</p>
+<p>The part that’s more important to us is the <code class="language-plaintext highlighter-rouge">[KEYBOARD]</code> settings, which you can find when scrolling down a bit. This only applies if you do not want to use the base key layout. Go ahead and change the <code class="language-plaintext highlighter-rouge">player1</code> variable into a <code class="language-plaintext highlighter-rouge">5</code>. This will allow us to set the correct keys by reading from the other variables labled <code class="language-plaintext highlighter-rouge">key_type5</code> right below that.</p>
+
+<p>Now, unfortunately, unlike the example in the .ini file tells you to do, you can’t just put the actual keys you want to use in there and have it work. What you need to do is enter specific numbers which correspond to a certain key. As for which number you have to type in for the individual keys, you will have to go into your <code class="language-plaintext highlighter-rouge">html</code> folder which you can find when you have the <code class="language-plaintext highlighter-rouge">root</code> folder open. From there, open <code class="language-plaintext highlighter-rouge">key.html</code>, and there you will have a handy list of which numbers correspond to which keys. Use the search function by pressing <code class="language-plaintext highlighter-rouge">CTRL+F</code>, type in a key, and you should be able to find the corresponding number quite quickly. Now it’s just a matter of putting those numbers into the specific variables. Here is how the guide maintainer has his set up, for example:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>key_type5_up = 119
+key_type5_down = 115
+key_type5_left = 97
+key_type5_right = 100
+key_type5_a = 106
+key_type5_b = 107
+key_type5_c = 108
+key_type5_d = 32
+</code></pre></div></div>
+<p>This will result in a layout that uses A and D to go left/right, W for a sonic drop, S for a hard drop, JKL for rotations and the space bar for hold. Basically, it shifts the default layout up by one key row.</p>
 
 <p class="message">
  This guide is still a work in progress! Give it some time, it will be updated soon...
