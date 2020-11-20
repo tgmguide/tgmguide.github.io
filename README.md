@@ -1,4 +1,5 @@
 # tgmguide.github.io
+
 A guide for TGM, built with Jekyll (using a somewhat-heavily modified version of the Lanyon theme). Mainly maintained by sinefuse.
 
 This guide is based on [Lanyon](https://lanyon.getpoole.com/) (with modifications to the CSS and the template pages), which in turn is a theme for [Jekyll](https://jekyllrb.com).
@@ -15,4 +16,4 @@ If you find any bugs or problems with how the site functions as well, please do 
 
 ## How do I run this?
 
-Download the repo and put its files into a folder named "tgmguide" (very important), open cmd, cd into the repo folder you have and run `jekyll serve`. from here on you can edit the markdown files and preview them on `localhost:4000`.
+Download the repo and put its files into a folder named "tgmguide" (very important), open cmd, cd into the repo folder you have and run `jekyll serve`. from here on you can edit the markdown files and preview them on `localhost:4000`. Once you are done, you can run `jekyll build` to make sure the site is ready to be deployed and pushed to your repo.
