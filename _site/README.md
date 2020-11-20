@@ -1,4 +1,4 @@
-# tgmguide-jekyll
+# tgmguide.github.io
 A guide for TGM, built with Jekyll (using a somewhat-heavily modified version of the Lanyon theme). Mainly maintained by sinefuse.
 
 This guide is based on [Lanyon](https://lanyon.getpoole.com/) (with modifications to the CSS and the template pages), which in turn is a theme for [Jekyll](https://jekyllrb.com).
