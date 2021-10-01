@@ -36,40 +36,43 @@
  *
  * Update the foundational and global aspects of the page.
  */
- 
+
 /* let's try something a bit different. */
-/* dark theme with cyan highlights */
-html, html[data-theme="dark"] {
+/* fallback theme (also dark) */
+html, {
 	--main-bg-color: #111;
 	--sub-bg-color: #222;
 	--main-text-color: #eee;
 	--sub-text-color: #ddd;
-	--theme-bg-color: #113341; 
+	--theme-bg-color: #113341;
 	--theme-text-color: #00b0c0;
 	--burger-icon: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='%23EEE' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M2.5 11.5A.5.5 0 013 11h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 7h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 3h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat;
-	--mode-toggle-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' fill='%23EEE'%3E%3Cpath d='M274.835 12.646l25.516 62.393c4.213 10.301 16.671 14.349 26.134 8.492l57.316-35.479c15.49-9.588 34.808 4.447 30.475 22.142l-16.03 65.475c-2.647 10.81 5.053 21.408 16.152 22.231l67.224 4.987c18.167 1.348 25.546 24.057 11.641 35.826L441.81 242.26c-8.495 7.19-8.495 20.289 0 27.479l51.454 43.548c13.906 11.769 6.527 34.478-11.641 35.826l-67.224 4.987c-11.099.823-18.799 11.421-16.152 22.231l16.03 65.475c4.332 17.695-14.986 31.73-30.475 22.142l-57.316-35.479c-9.463-5.858-21.922-1.81-26.134 8.492l-25.516 62.393c-6.896 16.862-30.774 16.862-37.67 0l-25.516-62.393c-4.213-10.301-16.671-14.349-26.134-8.492l-57.317 35.479c-15.49 9.588-34.808-4.447-30.475-22.142l16.03-65.475c2.647-10.81-5.053-21.408-16.152-22.231l-67.224-4.987c-18.167-1.348-25.546-24.057-11.641-35.826L70.19 269.74c8.495-7.19 8.495-20.289 0-27.479l-51.454-43.548c-13.906-11.769-6.527-34.478 11.641-35.826l67.224-4.987c11.099-.823 18.799-11.421 16.152-22.231l-16.03-65.475c-4.332-17.695 14.986-31.73 30.475-22.142l57.317 35.479c9.463 5.858 21.921 1.81 26.134-8.492l25.516-62.393c6.896-16.861 30.774-16.861 37.67 0zM392 256c0-74.991-61.01-136-136-136-74.991 0-136 61.009-136 136s61.009 136 136 136c74.99 0 136-61.009 136-136zm-32 0c0 57.346-46.654 104-104 104s-104-46.654-104-104 46.654-104 104-104 104 46.654 104 104z'/%3E%3C/svg%3E"); no-repeat; /* sun svg */
 }
- 
- 
+
+@media (prefers-color-scheme: dark) {
+html {
+    --main-bg-color: #111;
+	--sub-bg-color: #222;
+	--main-text-color: #eee;
+	--sub-text-color: #ddd;
+	--theme-bg-color: #113341;
+	--theme-text-color: #00b0c0;
+	--burger-icon: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='%23EEE' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M2.5 11.5A.5.5 0 013 11h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 7h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 3h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat;
+}
+
+
 /* light theme with orange highlights */
-html[data-theme="light"] {
-		--main-bg-color: #f2f2f2;
-		--sub-bg-color: #e2e2e2;
-		--main-text-color: #111;
-		--sub-text-color: #222;
-		--theme-bg-color: #582012; 
-		--theme-text-color: #e71f1f;
-		--burger-icon: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M2.5 11.5A.5.5 0 013 11h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 7h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 3h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat;
-		--mode-toggle-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' fill='%23333'%3E%3Cpath d='M279.135 512c78.756 0 150.982-35.804 198.844-94.775 28.27-34.831-2.558-85.722-46.249-77.401-82.348 15.683-158.272-47.268-158.272-130.792 0-48.424 26.06-92.292 67.434-115.836 38.745-22.05 28.999-80.788-15.022-88.919A257.936 257.936 0 0 0 279.135 0c-141.36 0-256 114.575-256 256 0 141.36 114.576 256 256 256zm0-464c12.985 0 25.689 1.201 38.016 3.478-54.76 31.163-91.693 90.042-91.693 157.554 0 113.848 103.641 199.2 215.252 177.944C402.574 433.964 344.366 464 279.135 464c-114.875 0-208-93.125-208-208s93.125-208 208-208z'/%3E%3C/svg%3E") no-repeat; /* this one is a moon */
-	}
-}
-
 @media (prefers-color-scheme: light) {
-	html {
-		content: "light";
-	}
+    html {
+    		--main-bg-color: #f2f2f2;
+    		--sub-bg-color: #e2e2e2;
+    		--main-text-color: #111;
+    		--sub-text-color: #222;
+    		--theme-bg-color: #582012;
+    		--theme-text-color: #e71f1f;
+    		--burger-icon: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M2.5 11.5A.5.5 0 013 11h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 7h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 3h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat;
+    	}
 }
-
 
 /* Prevent scroll on narrow devices */
 html,
@@ -97,11 +100,11 @@ h1, h2, h3, h4, h5, h6 {
  * to make sure they adapt to the dark mode properly.
  * Is it a clean patch? No. Does it work? Yes. I'll take it.
  */
- 
+
 strong {
   color: var(--main-text-color);
 }
- 
+
 .hometext {
 	color: var(--main-text-color);
 	padding-bottom: 8em;
@@ -386,7 +389,7 @@ a.sidebar-nav-item:focus {
 }
 #sidebar-checkbox:checked ~ .sidebar,
 #sidebar-checkbox:checked ~ .wrap,
-#sidebar-checkbox:checked ~ .sidebar-toggle, 
+#sidebar-checkbox:checked ~ .sidebar-toggle,
 #sidebar-checkbox:checked ~ .theme-toggle {
   -webkit-transform: translateX(14rem);
       -ms-transform: translateX(14rem);
@@ -458,7 +461,7 @@ a.sidebar-nav-item:focus {
  * Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
  * there are no more previous or next posts to show.
  *
- * NOTE: While pagination is not used in the TGM Guide, the styling is kept 
+ * NOTE: While pagination is not used in the TGM Guide, the styling is kept
  * in case removing it might potentially break something. Better safe than sorry...
  */
 
