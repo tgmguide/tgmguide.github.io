@@ -32,7 +32,7 @@ Unfortunately, playing TGM in a truly legitimate way is extremely difficult thes
 
 The difference is that in an Emulator, you play the actual games and your high scores can be submitted to [theabsolute.plus](https://theabsolute.plus), which is a leaderboard site for these games. Naturally, using emulators to play **pirated** copies is illegal of course, which is why **this guide will not provide direct links to any ROM images you may need.** However, if you provide your own, legally obtained ROM images to use with the emulator, it's perfectly legal. Therefore, *this guide assumes you're using your own, legally obtained ROM images.*
 
-Clones, on the other hand, usually have *gamemodes* which play like the actual games, but due to being slightly inaccurate (we're talking very slight amounts, by the way) and due to not being the actual games, scores from clones are not permitted on the leaderboards mentioned earlier. The thing about clones however is, since they're written from the ground up, they're legal to use. 
+Clones, on the other hand, usually have *gamemodes* which play like the actual games, but due to being slightly inaccurate (we're talking very slight amounts, by the way) and due to not being the actual games, scores from clones are not permitted on the leaderboards mentioned earlier. The thing about clones however is, since they're written from the ground up, they're legal to use.
 
 <div id="section3"></div>
 ## But why can't I just get the real games?
@@ -72,6 +72,16 @@ After this, you can play to your heart's content, enjoy! Also, for clarification
 
 <div id="section4b"></div>
 ### Setting up a clone
-[For a full guide for Texmaster, please click here.]({{ site.baseurl }}/2020/05/02/setting-up-texmaster/)
 
-A proper TL;DR guide for Texmaster will follow soon.
+The easiest clone to set up is **Shiromino**, but you can also try to set up Texmaster instead. [For a full guide for Texmaster, please click here.]({{ site.baseurl }}/2020/05/02/setting-up-texmaster/)
+
+A TL;DR on setting up Shiromino on Windows:
+
+1. Download it [by clicking here, scroll down and get the shiromino-windows zip file.](https://github.com/shiromino/shiromino/releases/latest)
+2. Extract it anywhere you want
+3. Open "shiromino.ini" inside the folder you extracted and:
+  * Feel free to set a different 3 letter-long name
+  * Change the keybindings under `[PLAYER_1_KEY_BINDINGS]`
+  * At the very bottom, you can change the `VIDEO_SCALE` setting to 2 or a bit further up below `SCREEN` you can also enable fullscreen by setting `FULL_SCREEN` to 1
+
+That's already it. All should be working just fine now! Shiromino is among the easiest TGM-focused clones to set up, and it also runs great to boot.
